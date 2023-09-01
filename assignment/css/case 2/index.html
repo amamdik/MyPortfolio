@@ -2,80 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Case 2</title>
+    <title>Case 2</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="../../../assests/css/normalize.css">
+
+    <style>
+
+      header{
+        position: relative;
+        height: 100px;
+        background-color: white;
+        box-shadow: 5px 1px 5px 1px black;
+      }
+
+      header>img{
+        margin-left: 20px;
+      }
+
+      header>nav{
+        position: absolute;
+        right: 20px;
+        top: 0px;
+      }
+
+      header>nav>ul>li{
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+      main>nav{
+        width: 350px;
+        background-color: midnightblue;
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+      }
+
+      main>nav>ul{
+        color: white;
+        list-style: none;
+      }
+
+      main>nav>ul>li{
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 30px;
+        cursor: pointer;
+      }
+
+      main>section{
+        margin-left: 350px;
+        padding: 10px;
+      }
+
+      main>section>section{
+        position: absolute;
+        left: 360px;
+        right: 29px;
+        top: 110px;
+        height: 300px;
+        background-color: white;
+        border: 1px solid darkred;
+      }
+
+      main>section>section>div{
+        width: 505px;
+        height: 299px;
+        border: 1px solid darkred;
+        display: inline-block;
+        position: relative;
+      }
+
+      main>section>section>div>img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      main>section>p:nth-child(2){
+        margin-top: 320px;
+      }
+
+      main>section>p:last-of-type{
+        margin-bottom: 0px;
+      }
+
+      footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 50px;
+        background: dimgrey;
+      }
+
+      footer>p{
+        text-align: center;
+        color: white;
+      }
+
+    </style>
 
 </head>
 <body>
 
 <header>
 
-    <img src="assests/IjseLogo.png" height="100" width="270"/>
+  <img src="images/IjseLogo.png" height="100" width="270"/>
 
-    <nav>
-        <menu>
-            <li><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a href="">About Us</a></li>
-        </menu>
-    </nav>
+  <nav>
+
+    <ul>
+      <li>Home</li>
+      <li>Services</li>
+      <li>Contacts</li>
+      <li>About Us</li>
+    </ul>
+
+  </nav>
 
 </header>
 
 <main>
 
-    <section>
-        <nav>
-            <menu>
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">About Us</a></li>
-            </menu>
-        </nav>
-    </section>
+  <nav>
+
+    <ul>
+      <li>Home</li>
+      <li>Services</li>
+      <li>Contacts</li>
+      <li>About Us</li>
+    </ul>
+
+  </nav>
+
+  <section>
 
     <section>
-
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-
+      <div><img src="images/bird.gif" height="200" width="238"/></div>
+      <div><img src="images/bird.gif" height="200" width="238"/></div>
+      <div><img src="images/bird.gif" height="200" width="238"/></div>
     </section>
 
-    <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum dolor id iure pariatur perspiciatis
-            placeat reprehenderit sint soluta voluptates. Dicta iusto molestiae mollitia nobis placeat quos. Nesciunt,
-            perferendis soluta?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est incidunt iusto molestiae nesciunt nulla
-            perspiciatis quas sed totam. Autem culpa ex facere iure maiores sed voluptatibus. Commodi deserunt esse
-            rem?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis, consequuntur corporis est excepturi
-            facere harum in incidunt, labore magni maxime natus nesciunt nisi nulla recusandae totam unde vero!
-            Itaque.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur, dicta dolor dolores ea
-            impedit, iure laboriosam minus nisi nobis qui. Aliquid dolore enim et placeat rerum sequi suscipit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio enim et, harum laborum
-            nobis odit veniam! Atque commodi harum illo modi quia! Accusantium architecto atque consequatur labore
-            pariatur vero!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores autem, blanditiis dolor enim,
-            ipsa laudantium magni mollitia omnis quaerat, quia vel voluptas! Aut blanditiis dolor eos ipsum, iste
-            odit?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores hic molestiae, mollitia nobis officia
-            placeat sint. Alias dicta, dolorum eaque eligendi ex, ipsam iusto quis ratione rem repellat similique,
-            voluptatum?</p>
-    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dolore dolorem
+      doloremque eveniet explicabo ipsam iusto neque numquam praesentium, provident quas quasi repellendus reprehenderit
+      repudiandae, sapiente veritatis!</p>
+
+  </section>
 
 </main>
 
 <footer>
-
-    <p>Developed By IJSE</p>
-
+  <p><small>Developed By IJSE</small></p>
 </footer>
 
 </body>
