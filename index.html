@@ -12,13 +12,38 @@
     <meta name="theme colour" content="yellow">
     <link rel="icon" href="assests/icon/icon.png">
     <meta name="robots" content="index,follow">
-    <style></style>
+    <link rel="stylesheet" href="assests/css/normalize.css">
+
+    <style>
+
+        header>nav:first-child{
+            width: 75vw;
+            height: 10vh;
+            position: absolute;
+            top: 0;
+            background: black;
+            z-index: 3;
+        }
+        header>nav:first-child>menu>li{
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+        }
+        header>nav:first-child>menu>li>a{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
 <header>
+
     <nav>
         <menu>
             <li><a href="index.html">Home</a></li>
@@ -26,9 +51,16 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact-me.html">Contact me</a>
-
         </menu>
     </nav>
+
+    <nav>
+        <menu>
+            <li><a href="tel:+94773939227">+94 773 9392 27</a></li>
+            <li><a href="amamdik@gmail.com">amamdik@gmail.com</a></li>
+        </menu>
+    </nav>
+
 </header>
 
 <main>
