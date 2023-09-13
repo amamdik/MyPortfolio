@@ -22,7 +22,7 @@
             position: absolute;
             top: 0;
             background: black;
-            z-index: 3;
+            z-index: 4;
         }
         header>nav:first-child>menu>li{
             font-weight: bold;
@@ -44,19 +44,54 @@
             top: 0;
             right: 0;
             background: #ffb531;
-            z-index: 3;
+            z-index: 4;
         }
         header>nav:nth-child(2)>menu>li{
             font-weight: bold;
             font-size: 20px;
             display: inline-block;
             padding: 20px;
-            margin-left: 40px;
+            margin-left: 35px;
             cursor: pointer;
         }
         header>nav:nth-child(2)>menu>li>a{
             color: black;
             text-decoration: none;
+        }
+
+
+        main>section:first-child>hgroup{
+            width: 70vw;
+            background-color: black;
+            position: absolute;
+            top: 10vh;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            z-index: 2;
+        }
+        main>section:first-child>section>div{
+            position: absolute;
+            top: 10vh;
+            bottom: 0;
+            right: 0;
+            background-color: #ffb531;
+            width: 30vw;
+            margin: auto;
+            z-index: 2;
+        }
+        main>section:first-child>section>div>nav>img{
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            margin-bottom: 10px;
+        }
+        main>section:first-child>section>img{
+            position: absolute;
+            top: 10vh;
+            bottom: 0;
+            right: 130px;
+            z-index: 3;
         }
 
     </style>
@@ -79,8 +114,8 @@
 
     <nav>
         <menu>
-            <li><a href="tel:+94773939227">+94 773 9392 27</a></li>
-            <li><a href="amamdik@gmail.com">amamdik@gmail.com</a></li>
+            <li><img width="22" height="22" src="assests/images/call.png" alt="png"><a href="tel:+94773939227">+94 773 9392 27</a></li>
+            <li><img width="22" height="22" src="assests/images/envelope%201.png" alt="png"><a href="amamdik@gmail.com">amamdik@gmail.com</a></li>
         </menu>
     </nav>
 
@@ -98,15 +133,15 @@
         </hgroup>
 
         <section>
-            <aside>
-                <img width="855" height="831" src="assests/images/owner.png" alt="png">
-            </aside>
-            <nav>
-                <div><img width="50" height="50" src="assests/images/facebook.png" alt="png"></div>
-                <div><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></div>
-                <div><img width="50" height="50" src="assests/images/instagram.png" alt="png"></div>
-                <div><img width="50" height="80" src="assests/images/github.png" alt="png"></div>
-            </nav>
+            <img width="855" height="831" src="assests/images/owner.png" alt="png">
+            <div>
+                <nav>
+                    <img width="50" height="50" src="assests/images/facebook.png" alt="png">
+                    <img width="50" height="50" src="assests/images/linkedin.png" alt="png">
+                    <img width="50" height="50" src="assests/images/instagram.png" alt="png">
+                    <img width="50" height="80" src="assests/images/github.png" alt="png">
+                </nav>
+            </div>
         </section>
 
     </section>
