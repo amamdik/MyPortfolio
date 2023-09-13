@@ -17,7 +17,7 @@
     <style>
 
         header>nav:first-child{
-            width: 75vw;
+            width: 70vw;
             height: 10vh;
             position: absolute;
             top: 0;
@@ -28,11 +28,34 @@
             font-weight: bold;
             font-size: 20px;
             display: inline-block;
-            padding: 10px;
+            padding: 20px;
+            margin-left: 30px;
             cursor: pointer;
         }
         header>nav:first-child>menu>li>a{
             color: white;
+            text-decoration: none;
+        }
+
+        header>nav:nth-child(2){
+            width: 30vw;
+            height: 10vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ffb531;
+            z-index: 3;
+        }
+        header>nav:nth-child(2)>menu>li{
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            padding: 20px;
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        header>nav:nth-child(2)>menu>li>a{
+            color: black;
             text-decoration: none;
         }
 
