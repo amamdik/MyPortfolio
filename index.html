@@ -60,7 +60,7 @@
         }
 
 
-        main>section:first-child>hgroup{
+        main>section:first-child>section:first-child{
             width: 70vw;
             background-color: black;
             position: absolute;
@@ -70,7 +70,29 @@
             margin: auto;
             z-index: 2;
         }
-        main>section:first-child>section>div{
+        main>section:first-child>section:first-child>hgroup{
+            position: absolute;
+            top: 150px;
+            left: 100px;
+        }
+        main>section:first-child>section:first-child>hgroup>h4{
+            font-size: 60px;
+            font-weight: lighter;
+            font-family: Arial;
+            color: white;
+            margin: 20px;
+        }
+        main>section:first-child>section:first-child>hgroup>h2{
+            font-weight: bold;
+            font-size: 100px;
+            margin: 10px;
+        }
+        main>section:first-child>section:first-child>hgroup>h1{
+            font-weight: bold;
+            font-size: 150px;
+            margin: 10px;
+        }
+        main>section:first-child>section:last-child>div{
             position: absolute;
             top: 10vh;
             bottom: 0;
@@ -80,13 +102,13 @@
             margin: auto;
             z-index: 2;
         }
-        main>section:first-child>section>div>nav>img{
-            position: absolute;
+        main>section:first-child>section:last-child>div>nav>img{
+            position: ;
             bottom: 25px;
             right: 25px;
             margin-bottom: 10px;
         }
-        main>section:first-child>section>img{
+        main>section:first-child>section:last-child>img{
             position: absolute;
             top: 10vh;
             bottom: 0;
@@ -125,12 +147,14 @@
 
     <section>
 
-        <hgroup>
-            <h4>Hi I'm</h4>
-            <h2><span style="color: #ffb531"><b>AMANDI</b></span></h2>
-            <h1><span style="color: #ffb531"><b>KESHALA</b></span></h1>
-            <h4>Software Engineer</h4>
-        </hgroup>
+        <section>
+            <hgroup>
+                <h4>Hi I'm</h4>
+                <h2><span style="color: #ffb531"><b>AMANDI</b></span></h2>
+                <h1><span style="color: #ffb531"><b>KESHALA</b></span></h1>
+                <h4>Software Engineer</h4>
+            </hgroup>
+        </section>
 
         <section>
             <img width="855" height="831" src="assests/images/owner.png" alt="png">
