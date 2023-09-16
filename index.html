@@ -24,6 +24,7 @@
             list-style: none;
         }
 
+        /*.....header.....*/
         header>nav:first-child{
             width: 70vw;
             height: 10vh;
@@ -73,6 +74,7 @@
             position: relative;
         }
 
+        /*.....home page.....*/
         main>section:first-child{
             position: relative;
             width: 99vw;
@@ -128,6 +130,7 @@
             margin-top: 25px;
         }
 
+        /*.....about us page.....*/
         main>section:nth-child(2){
             position: relative;
             width: 99vw;
@@ -191,6 +194,7 @@
             margin-right: 20px;
         }
 
+        /*.....service page.....*/
         main>section:nth-child(3){
             position: relative;
             width: 99vw;
@@ -254,6 +258,7 @@
             color: white;
         }
 
+        /*.....portfolio page.....*/
         main>section:nth-child(4){
             position: relative;
             width: 99vw;
@@ -278,6 +283,36 @@
             margin-bottom: 20px;
             margin-top: 5px;
             color: white;
+        }
+
+        /*.....contact us page.....*/
+        main>section:last-child{
+            position: relative;
+            width: 99vw;
+            height: 100vh;
+        }
+        main>section:last-child>hgroup{
+            position: absolute;
+            top: 40px;
+            left: 240px;
+        }
+        main>section:last-child>hgroup>h5{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        main>section:last-child>hgroup>h3{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 60px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            color: white;
+        }
+        main>section:last-child>section:first-child{
+            position: relative;
         }
 
     </style>
@@ -435,20 +470,16 @@
             <address>
                 <form>
                     <fieldset>
-                        <label for="fullName">Full Name</label>
                         <input name="fullName" id="fullName" type="text" placeholder="Full Name" required>
                         <br><br>
 
-                        <label for="emailAddress">Email Address</label>
                         <input name="emailAddress" id="emailAddress" type="email" placeholder="Email Address" required>
                         <br><br>
 
-                        <label for="phoneNo">Phone No.</label>
                         <input name="phoneNo" id="phoneNo" type="number" placeholder="Phone No." required>
                         <br><br>
 
-                        <label for="message">Message</label>
-                        <textarea name="Message" id="message" cols="30" rows="5"></textarea>
+                        <textarea name="Message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
                         <br><br>
 
                         <button type="submit">Submit</button>
