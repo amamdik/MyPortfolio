@@ -3,6 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /*.....header.....*/
+        header>nav:first-child{
+            width: 70vw;
+            height: 10vh;
+            position: relative;
+            display: inline-block;
+            background: #222222;
+            z-index: 9;
+        }
+        header>nav:first-child>menu>li{
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            padding: 20px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        header>nav:first-child>menu>li>a{
+            color: white;
+            text-decoration: none;
+        }
+
+        header>nav:nth-child(2){
+            width: 30vw;
+            height: 10vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ffb531;
+            z-index: 9;
+        }
+        header>nav:nth-child(2)>menu>li{
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-block;
+            padding: 20px;
+            margin-left: 35px;
+            cursor: pointer;
+        }
+        header>nav:nth-child(2)>menu>li>a{
+            color: #222222;
+            text-decoration: none;
+        }
+
+
+        main{
+            background-color: #222222;
+            position: relative;
+        }
+
+        /*.....1st page.....*/
+        main>section:first-child{
+            position: relative;
+            width: 99vw;
+            height: 500px;
+        }
+        main>section:first-child>h2{
+            font-size: 100px;
+            font-family: poppins;
+            font-weight: bold;
+            position: absolute;
+            bottom: 200px;
+            left: 100px;
+        }
+        main>section:first-child>nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -2px;
+            background-color: #ffb531;
+            width: 30vw;
+        }
+        main>section:first-child>nav>div{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        main>section:first-child>nav>div>img{
+            display: block;
+            margin-right: 25px;
+            margin-top: 25px;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -14,7 +110,13 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact-me.html">Contact me</a>
+        </menu>
+    </nav>
 
+    <nav>
+        <menu>
+            <li><img width="22" height="22" src="assests/images/call.png" alt="png"><a href="tel:+94773939227">+94 773 9392 27</a></li>
+            <li><img width="22" height="22" src="assests/images/envelope%201.png" alt="png"><a href="amamdik@gmail.com">amamdik@gmail.com</a></li>
         </menu>
     </nav>
 </header>
@@ -24,10 +126,12 @@
     <section>
         <h2><span style="color: #ffb531"><b>Portfolio</b></span></h2>
         <nav>
-            <div><img width="50" height="50" src="assests/images/facebook.png" alt="png"></div>
-            <div><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></div>
-            <div><img width="50" height="50" src="assests/images/instagram.png" alt="png"></div>
-            <div><img width="50" height="80" src="assests/images/github.png" alt="png"></div>
+            <div>
+                <img width="50" height="50" src="assests/images/facebook.png" alt="png">
+                <img width="50" height="50" src="assests/images/linkedin.png" alt="png">
+                <img width="50" height="50" src="assests/images/instagram.png" alt="png">
+                <img width="50" height="80" src="assests/images/github.png" alt="png">
+            </div>
         </nav>
 
     </section>
