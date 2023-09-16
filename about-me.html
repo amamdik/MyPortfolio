@@ -64,6 +64,7 @@
             position: relative;
         }
 
+        /*.....1st page.....*/
         main>section:first-child{
             position: relative;
             width: 99vw;
@@ -77,13 +78,87 @@
             bottom: 200px;
             left: 100px;
         }
-        main>section:first-child>nav>div{
+        main>section:first-child>nav{
             position: absolute;
             top: 0;
             bottom: 0;
             right: -2px;
             background-color: #ffb531;
             width: 30vw;
+        }
+        main>section:first-child>nav>div{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        main>section:first-child>nav>div>img{
+            display: block;
+            margin-right: 25px;
+            margin-top: 25px;
+        }
+
+        /*.....2nd page.....*/
+        main>section:nth-child(2){
+            position: relative;
+            width: 99vw;
+            height: 100vh;
+        }
+        main>section:nth-child(2)>aside{
+            position: relative;
+            display: inline-block;
+        }
+        main>section:nth-child(2)>aside>img{
+            position: absolute;
+            top: 200px;
+            left: 250px;
+        }
+        main>section:nth-child(2)>section>article{
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            right: 350px;
+        }
+        main>section:nth-child(2)>section>article>hgroup>h5{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        main>section:nth-child(2)>section>article>hgroup>h3{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 60px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            color: white;
+        }
+        main>section:nth-child(2)>section>article>p{
+            font-family: poppins;
+            font-weight: lighter;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            color: white;
+        }
+        main>section:nth-child(2)>section>section{
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            bottom: 100px;
+            right: 350px;
+        }
+        main>section:nth-child(2)>section>section>h5{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            color: #ffb531;
+        }
+        main>section:nth-child(2)>section>section>div>img{
+            margin-right: 20px;
         }
 
     </style>
@@ -138,19 +213,23 @@
                     <h3>I'm Software Engineer</h3>
                 </hgroup>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Natus quia, repellendus! Animi assumenda autem delectus dolorum error
-                    est eveniet inventore, ipsa iure magnam molestias officiis, recusandae sunt
-                    suscipit vitae voluptatibus!
+                    I am Amandi Keshala. As a Computer Science Undergraduate,
+                    I am passionate about exploring the vast and exciting world of technology.
+                    I excel in collaborative settings, valuing teamwork and the exchange of ideas
+                    to create impactful software solutions. With a strong foundation in computer
+                    science and a keen eye for innovation, I am poised to make a meaningful
+                    contribution to the ever-evolving tech landscape.
                 </p>
             </article>
             <section>
                 <h5>Skills</h5>
-                <div><img width="70" height="70" src="assests/images/java-icon.png" alt="png"></div>
-                <div><img width="70" height="70" src="assests/images/mysql-icon.png" alt="png"></div>
-                <div><img width="70" height="62" src="assests/images/html-icon.png" alt="png"></div>
-                <div><img width="70" height="90" src="assests/images/css-icon.png" alt="png"></div>
-                <div><img width="70" height="83 " src="assests/images/javascript-icon.png" alt="png"></div>
+                <div>
+                    <img width="70" height="70" src="assests/images/java-icon.png" alt="png">
+                    <img width="70" height="70" src="assests/images/mysql-icon.png" alt="png">
+                    <img width="70" height="62" src="assests/images/html-icon.png" alt="png">
+                    <img width="70" height="90" src="assests/images/css-icon.png" alt="png">
+                    <img width="70" height="83 " src="assests/images/javascript-icon.png" alt="png">
+                </div>
             </section>
             <nav></nav>
         </section>
