@@ -219,11 +219,81 @@
         main>section:nth-child(3)>section{
             width: 70vw;
             height: 500px;
-            border: 2px solid white;
             position: absolute;
             left: 240px;
             right: 240px;
             bottom: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        main>section:nth-child(3)>section>section{
+            position: relative;
+            height: 500px;
+            background-color: #2C2C2C;
+        }
+        main>section:nth-child(3)>section>section:first-child>article{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        main>section:nth-child(3)>section>section:first-child>article>div>img{
+            margin-bottom: 50px;
+        }
+        main>section:nth-child(3)>section>section:first-child>article>h4{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        main>section:nth-child(3)>section>section:first-child>article>p{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 20px;
+            color: white;
+        }
+        main>section:nth-child(3)>section>section:nth-child(2)>article{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        main>section:nth-child(3)>section>section:nth-child(2)>article>div>img{
+            margin-bottom: 50px;
+        }
+        main>section:nth-child(3)>section>section:nth-child(2)>article>h4{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        main>section:nth-child(3)>section>section:nth-child(2)>article>p{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 20px;
+            color: white;
+        }
+        main>section:nth-child(3)>section>section:last-child>article{
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        main>section:nth-child(3)>section>section:last-child>article>div>img{
+            margin-bottom: 50px;
+        }
+        main>section:nth-child(3)>section>section:last-child>article>h4{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        main>section:nth-child(3)>section>section:last-child>article>p{
+            font-weight: lighter;
+            font-family: poppins;
+            font-size: 20px;
+            color: white;
         }
 
     </style>
@@ -324,29 +394,29 @@
         </hgroup>
 
         <section>
-            <article>
-                <div><img width="74" height="74" src="assests/images/design-icon.png" alt="png"></div>
-                <h4>UI UX Designing</h4>
-                <p>
-                <h5><br>Design is the main thing of a <br>unique and performance <br>driven website.</h5>
-                </p>
-            </article>
+            <section>
+                <article>
+                    <div><img width="74" height="74" src="assests/images/design-icon.png" alt="png"></div>
+                    <h4>UI UX Designing</h4>
+                    <p><br>Design is the main thing of a <br>unique and performance <br>driven website.</p>
+                </article>
+            </section>
 
-            <article>
-                <div><img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png"></div>
-                <h4>Web Development</h4>
-                <p>
-                <h5><br>Let the whole world know <br>about your brand with a <br>unique and performance <br>driven website.</h5>
-                </p>
-            </article>
+            <section>
+                <article>
+                    <div><img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png"></div>
+                    <h4>Web Development</h4>
+                    <p><br>Let the whole world know <br>about your brand with a <br>unique and performance <br>driven website.</p>
+                </article>
+            </section>
 
-            <article>
-                <div><img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png"></div>
-                <h4>App Development</h4>
-                <p>
-                <h5><br>Create a modern enterprise <br>application that reliable and consistency with awesome <br>ideas</h5>
-                </p>
-            </article>
+            <section>
+                <article>
+                    <div><img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png"></div>
+                    <h4>App Development</h4>
+                    <p><br>Create a modern enterprise <br>application that reliable and consistency <br> with awesome ideas</p>
+                </article>
+            </section>
         </section>
 
 
