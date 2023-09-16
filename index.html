@@ -16,13 +16,21 @@
 
     <style>
 
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            text-decoration: none;
+            list-style: none;
+        }
+
         header>nav:first-child{
             width: 70vw;
             height: 10vh;
-            position: absolute;
-            top: 0;
+            position: relative;
+            display: inline-block;
             background: black;
-            z-index: 4;
+            z-index: 9;
         }
         header>nav:first-child>menu>li{
             font-weight: bold;
@@ -44,7 +52,7 @@
             top: 0;
             right: 0;
             background: #ffb531;
-            z-index: 4;
+            z-index: 9;
         }
         header>nav:nth-child(2)>menu>li{
             font-weight: bold;
@@ -60,15 +68,14 @@
         }
 
 
-        main>section:first-child>section:first-child{
-            width: 70vw;
+        main{
             background-color: black;
-            position: absolute;
-            top: 10vh;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            z-index: 2;
+            position: relative;
+        }
+        main>section:first-child{
+            position: relative;
+            width: 99vw;
+            height: 90vh;
         }
         main>section:first-child>section:first-child>hgroup{
             position: absolute;
@@ -94,26 +101,28 @@
         }
         main>section:first-child>section:last-child>div{
             position: absolute;
-            top: 10vh;
+            top: 0;
             bottom: 0;
-            right: 0;
+            right: -2px;
             background-color: #ffb531;
             width: 30vw;
-            margin: auto;
-            z-index: 2;
-        }
-        main>section:first-child>section:last-child>div>nav>img{
-            position: ;
-            bottom: 25px;
-            right: 25px;
-            margin-bottom: 10px;
         }
         main>section:first-child>section:last-child>img{
             position: absolute;
-            top: 10vh;
+            top: 0;
             bottom: 0;
-            right: 130px;
-            z-index: 3;
+            right: 120px;
+            z-index: 8;
+        }
+        main>section:first-child>section:last-child>div>nav{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        main>section:first-child>section:last-child>div>nav>img{
+            display: block;
+            margin-right: 25px;
+            margin-top: 25px;
         }
 
     </style>
