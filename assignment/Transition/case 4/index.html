@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition case 4</title>
+    <link rel="stylesheet" href="../../../assests/css/normalize.css">
+
+    <style>
+
+        section{
+            width: 300px;
+            height: 300px;
+            border: 20px solid gray;
+            border-radius: 100%;
+            border-top: 20px solid red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        section>div:first-child{
+            width: 170px;
+            height: 20px;
+            background: red;
+            position: absolute;
+            top: 95px;
+            right: 7px;
+            rotate: 135deg;
+        }
+
+        section>div:last-child{
+            height: 50px;
+            width: 50px;
+            background: red;
+            border-radius: 100%;
+            position: absolute;
+            right: 15px;
+            top: 25px;
+        }
+
+        section:hover{
+            transform: rotate(360deg);
+            transition: 3s all;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
+<section>
+    <div></div>
+    <div></div>
+</section>
+
 </body>
+
 </html>
