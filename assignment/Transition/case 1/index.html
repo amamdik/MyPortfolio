@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition case 1</title>
+  <link rel="stylesheet" href="../../../assests/css/normalize.css">
+
+  <style>
+    body>section{
+      display: flex;
+      flex-direction: column;
+    }
+
+    body>section>div{
+      position: relative;
+      background-color: purple;
+      width: 250px;
+      height: 50px;
+      margin: 20px 0px 20px 0px;
+      right: 200px;
+      box-shadow: 0px 0px 10px 5px black;
+
+    }
+
+    body>section>div:hover{
+      transition-duration: 4s;
+      transition-property: all;
+      right: 10px;
+      color: white;
+      background-color: purple;
+    }
+  </style>
+
+
+</head>
+<body>
+<section>
+  <div><h2>Menu 1</h2><p><i class="fa-solid fa-house"></i></p></div>
+  <div><h2>Menu 2</h2><p><i class="fa-solid fa-house"></i></p></div>
+  <div><h2>Menu 3</h2><p><i class="fa-solid fa-house"></i></p></div>
+  <div><h2>Menu 4</h2><p><i class="fa-solid fa-house"></i></p></div>
+  <div><h2>Menu 5</h2><p><i class="fa-solid fa-house"></i></p></div>
+</section>
+</body>
+</html>

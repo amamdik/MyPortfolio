@@ -295,7 +295,7 @@ a.button-2 img {
 /*.....service page.....*/
 .services-section {
     display: block;
-    padding: 150px 0;
+    padding: 150px ;
     background-image: url('../images/bg_services.png');
     background-position: center center;
     background-repeat: no-repeat;
