@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition case 3</title>
+    <link rel="stylesheet" href="../../../assests/css/normalize.css">
+
+    <style>
+
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+        section>div{
+            height: 50vh;
+            width: 35vw;
+            background-image: url("image/butterfly_img.jpg");
+            box-shadow: 5px 5px 5px 5px;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>div>div{
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            transition: height 0.5s;
+            background: lightgoldenrodyellow;
+            opacity: 0.3;
+        }
+        section>div:hover>div{
+            height: 100%;
+        }
+
+        section>div:hover>img{
+            height: 20%;
+            top: 20vh;
+        }
+
+        section>div>img{
+            height: 0;
+            position: absolute;
+            top: 0%;
+            transition: top 0.5s ease;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+    </style>
+
 </head>
 <body>
+
+<section>
+    <div><div></div><img src="icon/download_icon.png" height="40" width="48"/></div>
+</section>
 
 </body>
 </html>
