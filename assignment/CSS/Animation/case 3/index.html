@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation case 3</title>
+    <link rel="stylesheet" href="../../../../assests/css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        section>div{
+            width: calc(100%*3);
+            height: 100vh;
+            flex-grow: 1;
+            animation-name: anima;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        section>div>img{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        @keyframes anima {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(calc((-100%/3)*2));
+            }
+            100%{
+                transform: translateX(calc((-100%/3)*3));
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div><img src="images/background_img 1.jpg" /></div>
+    <div><img src="images/background_img 2.jpg" /></div>
+    <div><img src="images/background_img 3.jpg" /></div>
+
+</section>
+
+</body>
+
+</html>
