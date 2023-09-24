@@ -340,6 +340,7 @@ a.button-2 img {
     align-items: center;
     height: 400px;
     background-color: #2C2C2C;
+    border-radius: 30px;
 }
 
 .services-section .container > section > section > article {

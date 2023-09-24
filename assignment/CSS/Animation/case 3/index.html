@@ -8,38 +8,72 @@
 
     <style>
 
-        section {
+        main {
             width: 100vw;
             height: 100vh;
-            display: flex;
             overflow: hidden;
-
         }
 
-        section>div{
-            width: calc(100%*3);
-            height: 100vh;
-            flex-grow: 1;
-            animation-name: anima;
-            animation-duration:2s;
+        main > section {
+            width: calc(100% * 5);
+            height: 100%;
+            display: flex;
+            animation-name: slide_me;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
 
-        section>div>img{
-            height: 100vh;
-            width: 100vw;
+        main > section > div {
+            flex-grow: 1;
+            height: 100%;
         }
 
-        @keyframes anima {
-            0%{
+        main > section > div:nth-child(1) {
+            background: url("images/background_img 1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(2) {
+            background: url("images/background_img 2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(3) {
+            background: url("images/background_img 3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(4) {
+            background: url("images/background_img 4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            background: url("images/background_img 5.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slide_me {
+            0% {
                 transform: translateX(0px);
             }
-            50%{
-                transform: translateX(calc((-100%/3)*2));
+            25% {
+                transform: translateX(calc((-100%/5)*1));
             }
-            100%{
-                transform: translateX(calc((-100%/3)*3));
+            50% {
+                transform: translateX(calc((-100%/5)*2));
+            }
+            75% {
+                transform: translateX(calc((-100%/5)*3));
+            }
+            100% {
+                transform: translateX(calc((-100%/5)*4));
             }
         }
 
@@ -48,14 +82,15 @@
 </head>
 <body>
 
-<section>
-
-    <div><img src="images/background_img 1.jpg" /></div>
-    <div><img src="images/background_img 2.jpg" /></div>
-    <div><img src="images/background_img 3.jpg" /></div>
-
-</section>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
 
 </body>
-
 </html>
