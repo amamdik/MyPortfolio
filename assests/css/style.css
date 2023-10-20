@@ -586,3 +586,67 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+
+/*..... Education and Experience section  .....*/
+.education-n-experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 200px 0 0 250px;
+}
+
+.education-n-experience-section > section > h3{
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    margin: 15px;
+}
+
+.education-n-experience-section > section > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.education-n-experience-section > section > section > div {
+    margin-top: 30px;
+    margin-right: 100px;
+    background-color: #282828;
+}
+
+.education-n-experience-section > section > section > div > hgroup > h4 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.education-n-experience-section > section > section > div > hgroup > h5 {
+    font-weight: lighter;
+    font-size: 10px;
+    color: white;
+    margin: 10px;
+}
+
+
+/*..... Gallery section  .....*/
+.gallery-section {
+    display: block;
+    padding: 0 250px 50px 250px;
+}
+
+.gallery-section > img {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.gallery-section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
