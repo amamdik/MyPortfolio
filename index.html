@@ -165,17 +165,18 @@
 
             <section>
                 <ul class="tab-nav">
-                    <li class="active"><a href="#">Projects</a></li>
-                    <li><a href="#">Assignments</a></li>
+                    <li class="active" id="prNavItem1" onclick="tabfunction1()"><a
+                            href="javascript:void(0)">Projects</a></li>
+                    <li id="prNavItem2" onclick="tabfunction2()"><a href="javascript:void(0)">Assignments</a></li>
                 </ul>
                 <div class="tab-container">
-                    <div class="tab-item active">
+                    <div class="tab-item active" id="prTabItem1">
                         <img src="assests/images/1.png" alt="img" />
                         <img src="assests/images/2.png" alt="img" />
                         <img src="assests/images/3.png" alt="img" />
                         <img src="assests/images/4.png" alt="img" />
                     </div>
-                    <div class="tab-item">
+                    <div class="tab-item" id="prTabItem2">
                         <img src="assests/images/5.png" alt="img" />
                         <img src="assests/images/6.png" alt="img" />
                         <img src="assests/images/7.png" alt="img" />
@@ -262,6 +263,27 @@
     <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
 </footer>
 
+<div class="loader" id="loader-wp">
+    <div class="cssload-loader-inner">
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+    </div>
+    <h5>Hi there, Please wait...😊</h5>
+</div>
+
 <script>
     function openMenu() {
         document.getElementById("mobile-nav").classList.add("show");
@@ -270,6 +292,28 @@
     function closeMenu() {
         document.getElementById("mobile-nav").classList.remove("show");
     }
+
+    //Tab
+    function tabfunction1() {
+        document.getElementById("prNavItem1").classList.add("active");
+        document.getElementById("prTabItem1").classList.add("active");
+        document.getElementById("prNavItem2").classList.remove("active");
+        document.getElementById("prTabItem2").classList.remove("active");
+    }
+
+    function tabfunction2() {
+        document.getElementById("prNavItem2").classList.add("active");
+        document.getElementById("prTabItem2").classList.add("active");
+        document.getElementById("prNavItem1").classList.remove("active");
+        document.getElementById("prTabItem1").classList.remove("active");
+    }
+
+    setTimeout(function () {
+        var divToFadeOut = document.getElementById("loader-wp");
+        divToFadeOut.style.opacity = 0;
+        divToFadeOut.style.display = 'none';
+    }, 4000);
+
 </script>
 
 </body>
