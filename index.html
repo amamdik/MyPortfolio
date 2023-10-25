@@ -19,8 +19,36 @@
 
 <body>
 
-    <!-- Header Section -->
-    <header>
+<!-- Header Section -->
+<header>
+    <a href="javascript:void(0)" id="mobile-nav-link" class="mobile-nav-link" onclick="openMenu()">
+        <img src="assests/icon/hambergermenu.png" alt="Menu">
+    </a>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact-me.html">Contact me</a>
+        </ul>
+    </nav>
+
+    <div class="contact_information">
+        <ul>
+            <li><img width="22" height="22" src="assests/images/telephone.png" alt="png"><a
+                    href="tel:+94773939227">+94
+                773 9392 27</a></li>
+            <li><img width="22" height="22" src="assests/images/mail.png" alt="png"><a
+                    href="amamdik@gmail.com">amamdik@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button onclick="closeMenu()">
+            <img src="assests/icon/close.png" alt="Close menu">
+        </button>
         <nav>
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
@@ -30,216 +58,219 @@
                 <li><a href="contact-me.html">Contact me</a>
             </ul>
         </nav>
+    </div>
+</header>
 
-        <div class="contact_information">
-            <ul>
-                <li><img width="22" height="22" src="assests/images/telephone.png" alt="png"><a
-                        href="tel:+94773939227">+94
-                        773 9392 27</a></li>
-                <li><img width="22" height="22" src="assests/images/mail.png" alt="png"><a
-                        href="amamdik@gmail.com">amamdik@gmail.com</a></li>
-            </ul>
+<!-- Main Section -->
+<main>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <hgroup>
+            <h4>Hi I'm</h4>
+            <h2><span style="color: #ffb531"><b>AMANDI</b></span></h2>
+            <h1><span style="color: #ffb531"><b>KESHALA</b></span></h1>
+            <h4>Software Engineer</h4>
+        </hgroup>
+        <img width="855" height="831" src="assests/images/owner.png" alt="png">
+        <div class="social-link">
+            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/github.png" alt="png"></a>
         </div>
-    </header>
 
-    <!-- Main Section -->
-    <main>
+    </section>
 
-        <!-- Banner Section -->
-        <section class="banner-section">
+    <!-- About me section -->
+    <section class="about-me-section">
+        <div>
+            <img width="520" height="520" src="assests/images/About.png" alt="png">
+        </div>
+        <article>
             <hgroup>
-                <h4>Hi I'm</h4>
-                <h2><span style="color: #ffb531"><b>AMANDI</b></span></h2>
-                <h1><span style="color: #ffb531"><b>KESHALA</b></span></h1>
-                <h4>Software Engineer</h4>
+                <h5>Hello</h5>
+                <h3>I'm Software Engineer</h3>
             </hgroup>
-            <img width="855" height="831" src="assests/images/owner.png" alt="png">
-            <div class="social-link">
-                <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="png"></a>
-                <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></a>
-                <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="png"></a>
-                <a href="#"><img width="50" height="80" src="assests/images/github.png" alt="png"></a>
+            <p>
+                I am Amandi Keshala. As a Computer Science Undergraduate,
+                I am passionate about exploring the vast and exciting world of technology.
+                I excel in collaborative settings, valuing teamwork and the exchange of ideas
+                to create impactful software solutions. With a strong foundation in computer
+                science and a keen eye for innovation, I am poised to make a meaningful
+                contribution to the ever-evolving tech landscape.
+            </p>
+            <h5>Skills</h5>
+            <div class="skills">
+                <img width="70" height="70" src="assests/images/java-icon.png" alt="png">
+                <img width="70" height="70" src="assests/images/mysql-icon.png" alt="png">
+                <img width="70" height="62" src="assests/images/html-icon.png" alt="png">
+                <img width="70" height="90" src="assests/images/css-icon.png" alt="png">
+                <img width="70" height="83 " src="assests/images/javascript-icon.png" alt="png">
             </div>
-
-        </section>
-
-        <!-- About me section -->
-        <section class="about-me-section">
-            <div>
-                <img width="520" height="520" src="assests/images/About.png" alt="png">
-            </div>
-            <article>
-                <hgroup>
-                    <h5>Hello</h5>
-                    <h3>I'm Software Engineer</h3>
-                </hgroup>
-                <p>
-                    I am Amandi Keshala. As a Computer Science Undergraduate,
-                    I am passionate about exploring the vast and exciting world of technology.
-                    I excel in collaborative settings, valuing teamwork and the exchange of ideas
-                    to create impactful software solutions. With a strong foundation in computer
-                    science and a keen eye for innovation, I am poised to make a meaningful
-                    contribution to the ever-evolving tech landscape.
-                </p>
-                <h5>Skills</h5>
-                <div class="skills">
-                    <img width="70" height="70" src="assests/images/java-icon.png" alt="png">
-                    <img width="70" height="70" src="assests/images/mysql-icon.png" alt="png">
-                    <img width="70" height="62" src="assests/images/html-icon.png" alt="png">
-                    <img width="70" height="90" src="assests/images/css-icon.png" alt="png">
-                    <img width="70" height="83 " src="assests/images/javascript-icon.png" alt="png">
-                </div>
-                <div class="button-section">
-                    <a href="#" class="button-1">Download CV <img src="assests/images/arrow-down.png"
-                            alt="Download" /></a>
-                    <a href="about-me.html" class="button-2">See more <img src="assests/images/arrow-left.png"
-                            alt="More" /></a>
-                </div>
-            </article>
-        </section>
-
-        <!-- Services section -->
-        <section class="services-section">
-            <div class="container">
-                <hgroup>
-                    <h5><span style="color: #ffb531"><b>What I do?</b></span></h5>
-                    <h3>Services</h3>
-                </hgroup>
-
-                <section>
-                    <section>
-                        <article>
-                            <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
-                            <h4>UI UX Designing</h4>
-                            <p>Design is the main thing of a unique and performance driven website.</p>
-                        </article>
-                    </section>
-
-                    <section>
-                        <article>
-                            <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
-                            <h4>Web Development</h4>
-                            <p>Let the whole world know about your brand with a unique and performance driven website.
-                            </p>
-                        </article>
-                    </section>
-
-                    <section>
-                        <article>
-                            <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
-                            <h4>App Development</h4>
-                            <p>Create a modern enterprise application that reliable and consistency with awesome ideas
-                            </p>
-                        </article>
-                    </section>
-                </section>
-            </div>
-        </section>
-
-        <!-- Portfolio section -->
-        <section class="portfolio-section">
-            <div class="container">
-                <hgroup>
-                    <h5><span style="color: #ffb531"><b>Take a Look at</b></span></h5>
-                    <h3>Portfolio</h3>
-                </hgroup>
-
-                <section>
-                    <ul class="tab-nav">
-                        <li class="active"><a href="#">Projects</a></li>
-                        <li><a href="#">Assignments</a></li>
-                    </ul>
-                    <div class="tab-container">
-                        <div class="tab-item active">
-                            <img src="assests/images/1.png" alt="img" />
-                            <img src="assests/images/2.png" alt="img" />
-                            <img src="assests/images/3.png" alt="img" />
-                            <img src="assests/images/4.png" alt="img" />
-                        </div>
-                        <div class="tab-item">
-                            <img src="assests/images/5.png" alt="img" />
-                            <img src="assests/images/6.png" alt="img" />
-                            <img src="assests/images/7.png" alt="img" />
-                            <img src="assests/images/8.png" alt="img" />
-                        </div>
-                    </div>
-                </section>
-            </div>
-
             <div class="button-section">
-                <a href="portfolio.html" class="button-2">See All My Works <img src="assests/images/arrow-left.png"
-                        alt="More" /></a>
+                <a href="#" class="button-1">Download CV <img src="assests/images/arrow-down.png"
+                                                              alt="Download" /></a>
+                <a href="about-me.html" class="button-2">See more <img src="assests/images/arrow-left.png"
+                                                                       alt="More" /></a>
             </div>
+        </article>
+    </section>
 
-        </section>
+    <!-- Services section -->
+    <section class="services-section">
+        <div class="container">
+            <hgroup>
+                <h5><span style="color: #ffb531"><b>What I do?</b></span></h5>
+                <h3>Services</h3>
+            </hgroup>
 
-        <!-- Contact section -->
-        <section class="contact-section">
-            <div class="container">
-                <hgroup>
-                    <h5><span style="color: #ffb531"><b>Get In Touch</b></span></h5>
-                    <h3>Contact Me</h3>
-                </hgroup>
-
+            <section>
                 <section>
-                    <form>
-                        <input name="fullName" id="fullName" type="text" placeholder="Full Name" required>
-                        <input name="emailAddress" id="emailAddress" type="email" placeholder="Email Address" required>
-                        <input name="phoneNo" id="phoneNo" type="number" placeholder="Phone No." required>
-                        <textarea name="Message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
                     <article>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
-                            suscipit. Mauris pharetra nisi ac lacus suscipit, et viverra mi tempus. Maecenas diam est,
-                            vestibulum in ante vitae, sagittis fermentum ex. Sed placerat dignissim nisi, nec vehicula
-                            enim pharetra et. Aenean molestie urna ac
-                            pulvinar pretium. Nam tempor nec urna sit amet aliquam.</p>
-                        <div class="contact-link"><img width="22" height="22" src="assests/images/call.png" alt="png"><a
-                                href="tel:+94773939227">+94 773 9392 27</a></div>
-                        <div class="contact-link"><img width="22" height="22" src="assests/images/envelope%201.png" alt="png"><a
-                                href="amamdik@gmail.com">amamdik@gmail.com</a></div>
-                        <div class="ft-social-links">
-                            <img usemap="#fbMap" width="50" height="50" src="assests/images/facebook-2.png" alt="facebook">
-                            <img usemap="#linkedInMap" width="50" height="50" src="assests/images/linkedin-2.png"
-                                alt="linkedin">
-                            <img usemap="#instagramMap" width="50" height="50" src="assests/images/instagram-2.png"
-                                alt="instagram">
-                            <img usemap="#githubMap" width="50" height="50" src="assests/images/githab-2.png" alt="githab">
-
-                            <map name="fbMap">
-                                <area shape="rect" coords="0,0,50,50" href="https://web.facebook.com/?_rdc=1&_rdr"
-                                    alt="Go To Facebook">
-                            </map>
-
-                            <map name="linkedInMap">
-                                <area shape="rect" coords="0,0,50,50" href="https://www.linkedin.com/feed/"
-                                    alt="Go To LinkedIn">
-                            </map>
-
-                            <map name="instagramMap">
-                                <area shape="rect" coords="0,0,50,50"
-                                    href="https://instagram.com/amandi_keshala?igshid=MzNlNGNkZWQ4Mg=="
-                                    alt="Go To Instagram">
-                            </map>
-
-                            <map name="githubMap">
-                                <area shape="rect" coords="0,0,80,50" href="https://github.com/amamdik"
-                                    alt="Go To GitHub">
-                            </map>
-                        </div>
+                        <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
+                        <h4>UI UX Designing</h4>
+                        <p>Design is the main thing of a unique and performance driven website.</p>
                     </article>
                 </section>
 
-            </div>
-        </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
+                        <h4>Web Development</h4>
+                        <p>Let the whole world know about your brand with a unique and performance driven website.
+                        </p>
+                    </article>
+                </section>
 
-    </main>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
+                        <h4>App Development</h4>
+                        <p>Create a modern enterprise application that reliable and consistency with awesome ideas
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </div>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
-    </footer>
+    <!-- Portfolio section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <hgroup>
+                <h5><span style="color: #ffb531"><b>Take a Look at</b></span></h5>
+                <h3>Portfolio</h3>
+            </hgroup>
+
+            <section>
+                <ul class="tab-nav">
+                    <li class="active"><a href="#">Projects</a></li>
+                    <li><a href="#">Assignments</a></li>
+                </ul>
+                <div class="tab-container">
+                    <div class="tab-item active">
+                        <img src="assests/images/1.png" alt="img" />
+                        <img src="assests/images/2.png" alt="img" />
+                        <img src="assests/images/3.png" alt="img" />
+                        <img src="assests/images/4.png" alt="img" />
+                    </div>
+                    <div class="tab-item">
+                        <img src="assests/images/5.png" alt="img" />
+                        <img src="assests/images/6.png" alt="img" />
+                        <img src="assests/images/7.png" alt="img" />
+                        <img src="assests/images/8.png" alt="img" />
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="button-section">
+            <a href="portfolio.html" class="button-2">See All My Works <img src="assests/images/arrow-left.png"
+                                                                            alt="More" /></a>
+        </div>
+
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <hgroup>
+                <h5><span style="color: #ffb531"><b>Get In Touch</b></span></h5>
+                <h3>Contact Me</h3>
+            </hgroup>
+
+            <section>
+                <form>
+                    <input name="fullName" id="fullName" type="text" placeholder="Full Name" required>
+                    <input name="emailAddress" id="emailAddress" type="email" placeholder="Email Address" required>
+                    <input name="phoneNo" id="phoneNo" type="number" placeholder="Phone No." required>
+                    <textarea name="Message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
+                        suscipit. Mauris pharetra nisi ac lacus suscipit, et viverra mi tempus. Maecenas diam est,
+                        vestibulum in ante vitae, sagittis fermentum ex. Sed placerat dignissim nisi, nec vehicula
+                        enim pharetra et. Aenean molestie urna ac
+                        pulvinar pretium. Nam tempor nec urna sit amet aliquam.</p>
+                    <div class="contact-link"><img width="22" height="22" src="assests/images/call.png" alt="png"><a
+                            href="tel:+94773939227">+94 773 9392 27</a></div>
+                    <div class="contact-link"><img width="22" height="22" src="assests/images/envelope%201.png"
+                                                   alt="png"><a href="amamdik@gmail.com">amamdik@gmail.com</a></div>
+                    <div class="ft-social-links">
+                        <img usemap="#fbMap" width="50" height="50" src="assests/images/facebook-2.png"
+                             alt="facebook">
+                        <img usemap="#linkedInMap" width="50" height="50" src="assests/images/linkedin-2.png"
+                             alt="linkedin">
+                        <img usemap="#instagramMap" width="50" height="50" src="assests/images/instagram-2.png"
+                             alt="instagram">
+                        <img usemap="#githubMap" width="50" height="50" src="assests/images/githab-2.png"
+                             alt="githab">
+
+                        <map name="fbMap">
+                            <area shape="rect" coords="0,0,50,50" href="https://web.facebook.com/?_rdc=1&_rdr"
+                                  alt="Go To Facebook">
+                        </map>
+
+                        <map name="linkedInMap">
+                            <area shape="rect" coords="0,0,50,50" href="https://www.linkedin.com/feed/"
+                                  alt="Go To LinkedIn">
+                        </map>
+
+                        <map name="instagramMap">
+                            <area shape="rect" coords="0,0,50,50"
+                                  href="https://instagram.com/amandi_keshala?igshid=MzNlNGNkZWQ4Mg=="
+                                  alt="Go To Instagram">
+                        </map>
+
+                        <map name="githubMap">
+                            <area shape="rect" coords="0,0,80,50" href="https://github.com/amamdik"
+                                  alt="Go To GitHub">
+                        </map>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
+</footer>
+
+<script>
+    function openMenu() {
+        document.getElementById("mobile-nav").classList.add("show");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-nav").classList.remove("show");
+    }
+</script>
 
 </body>
 

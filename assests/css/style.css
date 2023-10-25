@@ -8,6 +8,10 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
 /*.....header.....*/
@@ -18,35 +22,34 @@ header {
     left: 0;
     width: 100%;
     z-index: 99;
+    justify-content: space-between;
 }
 
 nav {
-    width: 70%;
     padding: 30px;
 }
 
 .contact_information {
-    width: 30%;
     padding-top: 30px;
     padding-right: 30px;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: inline-block;
     padding-left: 20px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     font-size: 20px;
     color: white;
     text-align: center;
 }
 
-nav > ul > li:last-of-type {
+nav>ul>li:last-of-type {
     padding-right: 0;
 }
 
-nav > ul > li.active > a::before {
+nav>ul>li.active>a::before {
     display: block;
     position: absolute;
     content: "";
@@ -58,25 +61,25 @@ nav > ul > li.active > a::before {
     margin-left: 50%;
 }
 
-div > ul > li {
+div>ul>li {
     display: inline-block;
 }
 
-div > ul > li > a {
+div>ul>li>a {
     color: black;
     text-align: center;
 }
 
 .contact_information ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: end;
 }
 
 .contact_information ul li {
-    width: 48%;
     display: flex;
     align-items: center;
+    padding-left: 15px;
 }
 
 .contact_information ul li a {
@@ -87,6 +90,14 @@ div > ul > li > a {
 .contact_information ul li img {
     display: inline-block;
     margin-right: 15px;
+}
+
+a.mobile-nav-link {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 
@@ -101,6 +112,8 @@ main {
     display: block;
     padding-top: 100px;
     height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
 }
 
 .banner-section::before {
@@ -132,36 +145,36 @@ main {
     top: 0;
 }
 
-.banner-section > section {
+.banner-section>section {
     display: block;
 }
 
-.banner-section > hgroup {
+.banner-section>hgroup {
     position: absolute;
     top: 30%;
     left: 100px;
 }
 
-.banner-section > hgroup > h4 {
+.banner-section>hgroup>h4 {
     font-size: 50px;
     font-weight: lighter;
     color: white;
     margin: 20px;
 }
 
-.banner-section > hgroup > h2 {
+.banner-section>hgroup>h2 {
     font-weight: bold;
     font-size: 80px;
     margin: 10px;
 }
 
-.banner-section > hgroup > h1 {
+.banner-section>hgroup>h1 {
     font-weight: bold;
     font-size: 100px;
     margin: 10px;
 }
 
-.banner-section > img {
+.banner-section>img {
     position: absolute;
     bottom: 0;
     right: 120px;
@@ -171,7 +184,7 @@ main {
 .social-link {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 30px;
     z-index: 9;
 }
@@ -192,11 +205,11 @@ main {
     margin: 0 auto;
 }
 
-.about-me-section > div {
+.about-me-section>div {
     width: 44%;
 }
 
-.about-me-section > div > img {
+.about-me-section>div>img {
     width: 100%;
     height: auto;
 }
@@ -295,7 +308,7 @@ a.button-2 img {
 /*.....service page.....*/
 .services-section {
     display: block;
-    padding: 150px ;
+    padding: 150px 0;
     background-image: url('../images/bg_services.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -326,7 +339,7 @@ a.button-2 img {
     color: white;
 }
 
-.services-section .container > section {
+.services-section .container>section {
     display: grid;
     width: 100%;
     align-self: center;
@@ -335,7 +348,7 @@ a.button-2 img {
     margin-top: 80px;
 }
 
-.services-section .container > section > section {
+.services-section .container>section>section {
     display: flex;
     align-items: center;
     height: 400px;
@@ -343,17 +356,17 @@ a.button-2 img {
     border-radius: 30px;
 }
 
-.services-section .container > section > section > article {
+.services-section .container>section>section>article {
     display: block;
     padding: 30px;
 }
 
-.services-section .container > section > section > article > img {
+.services-section .container>section>section>article>img {
     display: block;
     margin-bottom: 50px;
 }
 
-.services-section .container > section > section > article > h4 {
+.services-section .container>section>section>article>h4 {
     font-weight: 500;
     font-size: 25px;
     line-height: 27px;
@@ -361,7 +374,7 @@ a.button-2 img {
     margin-bottom: 20px;
 }
 
-.services-section .container > section > section > article > p {
+.services-section .container>section>section>article>p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -411,14 +424,14 @@ a.button-2 img {
     padding: 0;
 }
 
-.portfolio-section .container section .tab-nav > li {
+.portfolio-section .container section .tab-nav>li {
     display: inline-block;
     padding: 7px 20px;
     border-bottom: 1px solid #565656;
     margin-bottom: -1px;
 }
 
-.portfolio-section .container section .tab-nav > li.active {
+.portfolio-section .container section .tab-nav>li.active {
     border-bottom: 1px solid #ffb531;
 }
 
@@ -445,7 +458,7 @@ a.button-2 img {
     width: 100%;
 }
 
-.portfolio-section .container section .tab-container .tab-item > img {
+.portfolio-section .container section .tab-container .tab-item>img {
     display: inline-block;
     width: 50%;
     padding: 5px;
@@ -489,22 +502,22 @@ a.button-2 img {
     color: white;
 }
 
-.contact-section .container > section {
+.contact-section .container>section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.contact-section .container > section > form {
+.contact-section .container>section>form {
     width: 48%;
     border: none;
 }
 
-.contact-section .container > section > article {
+.contact-section .container>section>article {
     width: 48%;
 }
 
-.contact-section .container > section > form input {
+.contact-section .container>section>form input {
     display: block;
     width: 100%;
     background: #393939;
@@ -517,7 +530,7 @@ a.button-2 img {
     font-size: 16px;
 }
 
-.contact-section .container > section > form textarea {
+.contact-section .container>section>form textarea {
     display: block;
     width: 100%;
     background: #393939;
@@ -529,7 +542,7 @@ a.button-2 img {
     font-size: 16px;
 }
 
-.contact-section .container > section > form button {
+.contact-section .container>section>form button {
     display: inline-block;
     padding: 10px;
     width: 200px;
@@ -543,7 +556,7 @@ a.button-2 img {
     box-shadow: 0 0 5px 1px #000;
 }
 
-.contact-section .container > section > article p {
+.contact-section .container>section>article p {
     font-size: 16px;
     line-height: 25px;
     font-weight: 200;
@@ -551,31 +564,31 @@ a.button-2 img {
     margin-bottom: 20px;
 }
 
-.contact-section .container > section > article .contact-link {
+.contact-section .container>section>article .contact-link {
     display: block;
     margin-bottom: 15px;
     justify-content: center;
 }
 
-.contact-section .container > section > article .contact-link img {
+.contact-section .container>section>article .contact-link img {
     display: inline-block;
     margin-right: 15px;
     justify-content: center;
 }
 
-.contact-section .container > section > article .contact-link a {
+.contact-section .container>section>article .contact-link a {
     display: inline-block;
     color: #fff;
     font-size: 16px;
     line-height: 22px;
 }
 
-.contact-section .container > section > article .ft-social-links {
+.contact-section .container>section>article .ft-social-links {
     display: block;
     margin-top: 30px;
 }
 
-.contact-section .container > section > article .ft-social-links img {
+.contact-section .container>section>article .ft-social-links img {
     margin-right: 20px;
 }
 
@@ -596,33 +609,33 @@ footer {
     padding: 200px 0 0 250px;
 }
 
-.education-n-experience-section > section > h3{
+.education-n-experience-section>section>h3 {
     font-weight: 400;
     font-size: 40px;
     color: white;
     margin: 15px;
 }
 
-.education-n-experience-section > section > section{
+.education-n-experience-section>section>section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.education-n-experience-section > section > section > div {
+.education-n-experience-section>section>section>div {
     margin-top: 30px;
     margin-right: 100px;
     background-color: #282828;
 }
 
-.education-n-experience-section > section > section > div > hgroup > h4 {
+.education-n-experience-section>section>section>div>hgroup>h4 {
     font-weight: lighter;
     font-size: 20px;
     color: white;
     margin: 10px;
 }
 
-.education-n-experience-section > section > section > div > hgroup > h5 {
+.education-n-experience-section>section>section>div>hgroup>h5 {
     font-weight: lighter;
     font-size: 10px;
     color: white;
@@ -636,7 +649,7 @@ footer {
     padding: 0 250px 50px 250px;
 }
 
-.gallery-section > img {
+.gallery-section>img {
     position: absolute;
     top: -200px;
     left: 0;
@@ -644,9 +657,317 @@ footer {
     margin: auto;
 }
 
-.gallery-section > div {
+.gallery-section>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
+}
+
+/* Extra large devices - large desktops */
+@media (max-width: 1499.98px) {
+    .banner-section::before {
+        width: 60%;
+    }
+
+    .banner-section::after {
+        width: 40%;
+    }
+
+    .banner-section>img {
+        bottom: -5%;
+        right: 40px;
+    }
+
+    .banner-section>hgroup>h4 {
+        font-size: 35px;
+    }
+
+    .banner-section>hgroup>h2 {
+        font-size: 60px;
+    }
+
+    .banner-section>hgroup>h1 {
+        font-size: 80px;
+    }
+
+    .about-me-section {
+        padding: 150px 40px;
+    }
+
+    .services-section {
+        padding: 0 40px 50px 40px;
+    }
+
+    .portfolio-section {
+        padding: 50px 40px 100px 40px;
+    }
+
+    .contact-section {
+        padding: 80px 40px;
+    }
+
+}
+
+/* Large devices - desktops */
+@media (max-width: 1199.98px) {
+    header>nav {
+        display: none;
+    }
+
+    a.mobile-nav-link {
+        display: block;
+        padding: 25px;
+    }
+
+    .contact_information ul li:nth-of-type(2) {
+        display: none;
+    }
+
+    .banner-section>img {
+        bottom: -5%;
+        right: -170px;
+    }
+
+    .mobile-nav.show {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #000000;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .mobile-nav ul li {
+        display: block;
+        padding: 15px;
+    }
+
+    .mobile-nav button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-nav button img {
+        width: 100%;
+    }
+
+    .mobile-nav.show::before {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0 0 0 / 90%);
+        left: 0;
+        top: 0;
+    }
+
+    .about-me-section {
+        padding: 70px 40px;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* Medium devices - tablets */
+@media (max-width: 991.98px) {
+    .banner-section>img {
+        bottom: 0;
+        right: -70px;
+        width: 600px;
+        height: auto;
+    }
+
+    .banner-section {
+        height: auto;
+        min-height: 650px;
+    }
+
+    .banner-section>hgroup {
+        left: 30px;
+    }
+
+    .banner-section>hgroup>h4 {
+        font-size: 25px;
+    }
+
+    .banner-section>hgroup>h2 {
+        font-size: 40px;
+    }
+
+    .banner-section>hgroup>h1 {
+        font-size: 60px;
+    }
+
+    .about-me-section {
+        justify-content: center;
+    }
+
+    .about-me-section>div {
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .about-me-section article {
+        width: 100%;
+    }
+
+    .about-me-section article .skills img {
+        width: 40px;
+        height: auto;
+    }
+
+    .services-section .container>section>section>article>h4 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .services-section .container>section>section>article>img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .services-section .container>section>section {
+        height: 340px;
+    }
+
+}
+
+
+/* Small devices - landscape phones */
+@media (max-width: 767.98px) {
+    .banner-section::after {
+        width: 100%;
+        height: 40%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .banner-section::before {
+        width: 100%;
+        height: 60%;
+    }
+
+    .banner-section>img {
+        right: -130px;
+        width: 550px;
+    }
+
+    .social-link a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-link {
+        right: auto;
+        left: 20px;
+    }
+
+    div>ul>li>a {
+        color: white;
+    }
+
+    .banner-section>hgroup {
+        left: 20px;
+        top: 15%;
+    }
+
+    .contact_information ul li img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+
+    .about-me-section>div {
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .about-me-section>div {
+        display: none;
+    }
+
+    .about-me-section article hgroup h3 {
+        font-size: 40px;
+    }
+
+    .services-section .container>section {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .services-section .container>section>section {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section .container>section {
+        flex-wrap: wrap;
+    }
+
+    .contact-section .container>section>form {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact-section .container>section>article {
+        width: 100%;
+    }
+
+    .contact-section .container>section>article .ft-social-links img {
+        width: 40px;
+        height: auto;
+    }
+
+}
+
+
+/* Extra small devices - portrait phones */
+@media (max-width: 575.98px) {
+    .banner-section>img {
+        right: -100px;
+        width: 400px;
+    }
+
+    .banner-section>hgroup>h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .banner-section>hgroup>h2 {
+        font-size: 28px;
+    }
+
+    .banner-section>hgroup>h1 {
+        font-size: 50px;
+    }
+
+    .button-section>a {
+        width: 100%;
+        margin: 7px 0;
+        text-align: center;
+    }
+
+    .portfolio-section .container section .tab-container .tab-item>img {
+        width: 100%;
+    }
+
 }
