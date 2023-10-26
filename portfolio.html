@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Portfolio | Works | 2023</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <meta name="Description" content="Amandi Keshala - Software Engineer">
+    <meta name="Keywords" content="AMANDI KESHALA, Software Engineer, Java, GDSE66">
+    <meta name="Owner" content="Amandi Keshala">
+    <meta name="Author" content="Amandi Keshala">
+    <meta name="theme colour" content="yellow">
+    <link rel="icon" href="assests/icon/icon.png">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="assests/css/normalize.css">
     <link rel="stylesheet" href="assests/css/style.css">
 
@@ -11,11 +19,14 @@
 
 <!-- Header Section -->
 <header>
+    <a href="javascript:void(0)" id="mobile-nav-link" class="mobile-nav-link" onclick="openMenu()">
+        <img src="assests/icon/hambergermenu.png" alt="Menu">
+    </a>
     <nav>
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about-me.html">About me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact-me.html">Contact me</a>
         </ul>
@@ -30,30 +41,82 @@
                     href="amamdik@gmail.com">amamdik@gmail.com</a></li>
         </ul>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button onclick="closeMenu()">
+            <img src="assests/icon/close.png" alt="Close menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About me</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-me.html">Contact me</a>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
 
     <!-- Banner Section -->
-    <section class="banner-section" style="height: 500px">
-        <h2><span style="color: #ffb531"><b>Portfolio</b></span></h2>
+    <section class="banner-section inner-page">
+        <div class="page-title-wrapper">
+            <h2><span style="color: #ffb531"><b>Portfolio</b></span></h2>
+
+            <!-- Breadcrumb nav -->
+            <div class="breadcrumb-nav">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-separator"><img src="assests/images/arrow-left.png" alt="arrow"></li>
+                    <li class="breadcrumb-item active">Portfolio</li>
+                </ul>
+            </div>
+        </div>
         <div class="social-link">
-            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="png"></a>
-            <a href="#"><img width="50" height="80" src="assests/images/github.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="facebook"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="instagram"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/github.png" alt="github"></a>
         </div>
 
     </section>
 
-    <section>
-        <nav>
-            <menu>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Assignments">Assignments</a></li>
-            </menu>
-        </nav>
-        <section></section>
+    <section class="portfolio-section">
+        <div class="container">
+            <section>
+                <ul class="tab-nav">
+                    <li class="active" id="prNavItem1" onclick="tabfunction1()"><a
+                            href="javascript:void(0)">Projects</a></li>
+                    <li id="prNavItem2" onclick="tabfunction2()"><a href="javascript:void(0)">Assignments</a></li>
+                </ul>
+                <div class="tab-container">
+                    <div class="tab-item active" id="prTabItem1">
+                        <img src="assests/images/1.png" alt="img" />
+                        <img src="assests/images/2.png" alt="img" />
+                        <img src="assests/images/3.png" alt="img" />
+                        <img src="assests/images/4.png" alt="img" />
+                        <img src="assests/images/1.png" alt="img" />
+                        <img src="assests/images/2.png" alt="img" />
+                        <img src="assests/images/3.png" alt="img" />
+                        <img src="assests/images/4.png" alt="img" />
+                    </div>
+                    <div class="tab-item" id="prTabItem2">
+                        <img src="assests/images/5.png" alt="img" />
+                        <img src="assests/images/6.png" alt="img" />
+                        <img src="assests/images/7.png" alt="img" />
+                        <img src="assests/images/8.png" alt="img" />
+                        <img src="assests/images/5.png" alt="img" />
+                        <img src="assests/images/6.png" alt="img" />
+                        <img src="assests/images/7.png" alt="img" />
+                        <img src="assests/images/8.png" alt="img" />
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </section>
 
     <!-- Contact section -->
@@ -122,6 +185,59 @@
 <footer>
     <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
 </footer>
+
+<div class="loader" id="loader-wp">
+    <div class="cssload-loader-inner">
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+    </div>
+    <h5>Hi there, Please wait...😊</h5>
+</div>
+
+<script>
+    function openMenu() {
+        document.getElementById("mobile-nav").classList.add("show");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-nav").classList.remove("show");
+    }
+
+    //Tab
+    function tabfunction1() {
+        document.getElementById("prNavItem1").classList.add("active");
+        document.getElementById("prTabItem1").classList.add("active");
+        document.getElementById("prNavItem2").classList.remove("active");
+        document.getElementById("prTabItem2").classList.remove("active");
+    }
+
+    function tabfunction2() {
+        document.getElementById("prNavItem2").classList.add("active");
+        document.getElementById("prTabItem2").classList.add("active");
+        document.getElementById("prNavItem1").classList.remove("active");
+        document.getElementById("prTabItem1").classList.remove("active");
+    }
+
+    setTimeout(function () {
+        var divToFadeOut = document.getElementById("loader-wp");
+        divToFadeOut.style.opacity = 0;
+        divToFadeOut.style.display = 'none';
+    }, 4000);
+
+</script>
 
 </body>
 </html>
