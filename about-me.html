@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Portfolio | About Me | 2023</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <meta name="Description" content="Amandi Keshala - Software Engineer">
+    <meta name="Keywords" content="AMANDI KESHALA, Software Engineer, Java, GDSE66">
+    <meta name="Owner" content="Amandi Keshala">
+    <meta name="Author" content="Amandi Keshala">
+    <meta name="theme colour" content="yellow">
+    <link rel="icon" href="assests/icon/icon.png">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="assests/css/normalize.css">
     <link rel="stylesheet" href="assests/css/style.css">
 
 </head>
+
 <body>
 
 <!-- Header Section -->
 <header>
+    <a href="javascript:void(0)" id="mobile-nav-link" class="mobile-nav-link" onclick="openMenu()">
+        <img src="assests/icon/hambergermenu.png" alt="Menu">
+    </a>
     <nav>
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About me</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about-me.html">About me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact-me.html">Contact me</a>
@@ -30,24 +43,51 @@
                     href="amamdik@gmail.com">amamdik@gmail.com</a></li>
         </ul>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button onclick="closeMenu()">
+            <img src="assests/icon/close.png" alt="Close menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about-me.html">About me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-me.html">Contact me</a>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
 
     <!-- Banner Section -->
-    <section class="banner-section" style="height: 500px">
-        <h2><span style="color: #ffb531"><b>About Me</b></span></h2>
+    <section class="banner-section inner-page">
+        <div class="page-title-wrapper">
+            <h2><span style="color: #ffb531"><b>About Me</b></span></h2>
+
+            <!-- Breadcrumb nav -->
+            <div class="breadcrumb-nav">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-separator"><img src="assests/images/arrow-left.png" alt="arrow"></li>
+                    <li class="breadcrumb-item active">About Me</li>
+                </ul>
+            </div>
+        </div>
         <div class="social-link">
-            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="png"></a>
-            <a href="#"><img width="50" height="80" src="assests/images/github.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="facebook"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="instagram"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/github.png" alt="github"></a>
         </div>
 
     </section>
 
     <!-- About me section -->
-    <section class="about-me-section">
+    <section class="about-me-section inner-page">
         <div>
             <img width="520" height="520" src="assests/images/About.png" alt="png">
         </div>
@@ -91,7 +131,8 @@
                     <hgroup>
                         <h4><STRONG>Diploma In Computer Science</STRONG></h4>
                         <h4><span style="color: #ffb531"><b>Institute of Software Engineering - 2022</b></span></h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat suscipit.</h5>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
+                            suscipit.</h5>
                         <br>
                     </hgroup>
                 </div>
@@ -99,7 +140,8 @@
                     <hgroup>
                         <h4><STRONG>Diploma In Information Technology</STRONG></h4>
                         <h4><span style="color: #ffb531"><b>ESOFT Metro Campus - 2021</b></span></h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat suscipit.</h5>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
+                            suscipit.</h5>
                         <br>
                     </hgroup>
                 </div>
@@ -107,7 +149,8 @@
                     <hgroup>
                         <h4><STRONG>Diploma In Business English</STRONG></h4>
                         <h4><span style="color: #ffb531"><b>ESOFT Metro Campus - 2021</b></span></h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat suscipit.</h5>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
+                            suscipit.</h5>
                         <br>
                     </hgroup>
                 </div>
@@ -120,8 +163,9 @@
                 <div>
                     <hgroup>
                         <h4><STRONG>Digital Marketing Trainee</STRONG></h4>
-                        <h4><span style="color: #ffb531"><b>ADME.Today (Pvt) Ltd.  2019 - 2020</b></span></h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat suscipit.</h5>
+                        <h4><span style="color: #ffb531"><b>ADME.Today (Pvt) Ltd. 2019 - 2020</b></span></h4>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem at placerat
+                            suscipit.</h5>
                         <br>
                     </hgroup>
                 </div>
@@ -135,14 +179,14 @@
         <img width="530" height="69" src="assests/images/follow_instagram%201.png" alt="png">
 
         <div>
-            <img width="343" height="343" src="assests/images/insta1.png" alt="png">
-            <img width="344" height="343" src="assests/images/insta3.png" alt="png">
-            <img width="343" height="343" src="assests/images/insta2.png" alt="png">
-            <img width="343" height="344" src="assests/images/insta6.png" alt="png">
-            <img width="344" height="344" src="assests/images/insta4.png" alt="png">
-            <img width="343" height="344" src="assests/images/insta5.png" alt="png">
+            <img src="assests/images/insta1.png" alt="png">
+            <img src="assests/images/insta3.png" alt="png">
+            <img src="assests/images/insta2.png" alt="png">
+            <img src="assests/images/insta6.png" alt="png">
+            <img src="assests/images/insta4.png" alt="png">
+            <img src="assests/images/insta5.png" alt="png">
         </div>
-        
+
     </section>
 
     <!-- Contact section -->
@@ -169,15 +213,17 @@
                         pulvinar pretium. Nam tempor nec urna sit amet aliquam.</p>
                     <div class="contact-link"><img width="22" height="22" src="assests/images/call.png" alt="png"><a
                             href="tel:+94773939227">+94 773 9392 27</a></div>
-                    <div class="contact-link"><img width="22" height="22" src="assests/images/envelope%201.png" alt="png"><a
-                            href="amamdik@gmail.com">amamdik@gmail.com</a></div>
+                    <div class="contact-link"><img width="22" height="22" src="assests/images/envelope%201.png"
+                                                   alt="png"><a href="amamdik@gmail.com">amamdik@gmail.com</a></div>
                     <div class="ft-social-links">
-                        <img usemap="#fbMap" width="50" height="50" src="assests/images/facebook-2.png" alt="facebook">
+                        <img usemap="#fbMap" width="50" height="50" src="assests/images/facebook-2.png"
+                             alt="facebook">
                         <img usemap="#linkedInMap" width="50" height="50" src="assests/images/linkedin-2.png"
                              alt="linkedin">
                         <img usemap="#instagramMap" width="50" height="50" src="assests/images/instagram-2.png"
                              alt="instagram">
-                        <img usemap="#githubMap" width="50" height="50" src="assests/images/githab-2.png" alt="githab">
+                        <img usemap="#githubMap" width="50" height="50" src="assests/images/githab-2.png"
+                             alt="githab">
 
                         <map name="fbMap">
                             <area shape="rect" coords="0,0,50,50" href="https://web.facebook.com/?_rdc=1&_rdr"
@@ -212,5 +258,44 @@
     <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
 </footer>
 
+<div class="loader" id="loader-wp">
+    <div class="cssload-loader-inner">
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+    </div>
+    <h5>Hi there, Please wait...😊</h5>
+</div>
+
+<script>
+    function openMenu() {
+        document.getElementById("mobile-nav").classList.add("show");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-nav").classList.remove("show");
+    }
+
+    setTimeout(function () {
+        var divToFadeOut = document.getElementById("loader-wp");
+        divToFadeOut.style.opacity = 0;
+        divToFadeOut.style.display = 'none';
+    }, 4000);
+
+</script>
+
 </body>
+
 </html>
