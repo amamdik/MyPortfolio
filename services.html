@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>My Portfolio | Services | 2023</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <meta name="Description" content="Amandi Keshala - Software Engineer">
+    <meta name="Keywords" content="AMANDI KESHALA, Software Engineer, Java, GDSE66">
+    <meta name="Owner" content="Amandi Keshala">
+    <meta name="Author" content="Amandi Keshala">
+    <meta name="theme colour" content="yellow">
+    <link rel="icon" href="assests/icon/icon.png">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="assests/css/normalize.css">
     <link rel="stylesheet" href="assests/css/style.css">
 
@@ -11,12 +19,15 @@
 
 <!-- Header Section -->
 <header>
+    <a href="javascript:void(0)" id="mobile-nav-link" class="mobile-nav-link" onclick="openMenu()">
+        <img src="assests/icon/hambergermenu.png" alt="Menu">
+    </a>
     <nav>
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about-me.html">About me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="services.html">Services</a></li>
             <li><a href="contact-me.html">Contact me</a>
         </ul>
     </nav>
@@ -30,97 +41,131 @@
                     href="amamdik@gmail.com">amamdik@gmail.com</a></li>
         </ul>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button onclick="closeMenu()">
+            <img src="assests/icon/close.png" alt="Close menu">
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="contact-me.html">Contact me</a>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
 
     <!-- Banner Section -->
-    <section class="banner-section" style="height: 500px">
-        <h2><span style="color: #ffb531"><b>Services</b></span></h2>
+    <section class="banner-section inner-page">
+        <div class="page-title-wrapper">
+            <h2><span style="color: #ffb531"><b>Services</b></span></h2>
+
+            <!-- Breadcrumb nav -->
+            <div class="breadcrumb-nav">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-separator"><img src="assests/images/arrow-left.png" alt="arrow"></li>
+                    <li class="breadcrumb-item active">Services</li>
+                </ul>
+            </div>
+        </div>
         <div class="social-link">
-            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="png"></a>
-            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="png"></a>
-            <a href="#"><img width="50" height="80" src="assests/images/github.png" alt="png"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/facebook.png" alt="facebook"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/instagram.png" alt="instagram"></a>
+            <a href="#"><img width="50" height="50" src="assests/images/github.png" alt="github"></a>
         </div>
 
     </section>
 
-    <section>
-        <section>
+    <section class="services-section" style="padding-top: 50px;">
+        <div class="container">
             <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
-                    <h4>UI UX Designing</h4>
-                    <p><br>Design is the main thing of a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
+                        <h4>UI UX Designing</h4>
+                        <p>Design is the main thing of a unique and performance driven website.</p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
-                    <h4>Web Development</h4>
-                    <p><br>Let the whole world know <br>about your brand with a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
+                        <h4>Web Development</h4>
+                        <p>Let the whole world know about your brand with a unique and performance driven website.
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
-                    <h4>App Development</h4>
-                    <p><br>Create a modern enterprise <br>application that reliable and consistency with awesome <br>ideas</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
+                        <h4>App Development</h4>
+                        <p>Create a modern enterprise application that reliable and consistency with awesome ideas
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
-                    <h4>UI UX Designing</h4>
-                    <p><br>Design is the main thing of a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
+                        <h4>UI UX Designing</h4>
+                        <p>Design is the main thing of a unique and performance driven website.</p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
-                    <h4>Web Development</h4>
-                    <p><br>Let the whole world know <br>about your brand with a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
+                        <h4>Web Development</h4>
+                        <p>Let the whole world know about your brand with a unique and performance driven website.
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
-                    <h4>App Development</h4>
-                    <p><br>Create a modern enterprise <br>application that reliable and consistency with awesome <br>ideas</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
+                        <h4>App Development</h4>
+                        <p>Create a modern enterprise application that reliable and consistency with awesome ideas
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
-                    <h4>UI UX Designing</h4>
-                    <p><br>Design is the main thing of a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/design-icon.png" alt="png">
+                        <h4>UI UX Designing</h4>
+                        <p>Design is the main thing of a unique and performance driven website.</p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
-                    <h4>Web Development</h4>
-                    <p><br>Let the whole world know <br>about your brand with a <br>unique and performance <br>driven website.</p>
-                </article>
-            </section>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/webdevelopment-icon.png" alt="png">
+                        <h4>Web Development</h4>
+                        <p>Let the whole world know about your brand with a unique and performance driven website.
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <article>
-                    <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
-                    <h4>App Development</h4>
-                    <p><br>Create a modern enterprise <br>application that reliable and consistency with awesome <br>ideas</p>
-                </article>
+                <section>
+                    <article>
+                        <img width="74" height="74" src="assests/images/appdevelopment-icon.png" alt="png">
+                        <h4>App Development</h4>
+                        <p>Create a modern enterprise application that reliable and consistency with awesome ideas
+                        </p>
+                    </article>
+                </section>
             </section>
-        </section>
-
+        </div>
     </section>
 
     <!-- Contact section -->
@@ -189,6 +234,44 @@
 <footer>
     <p><small>©</small>All Rights Reserved.2023|Design & Developed by Amandi Keshala</p>
 </footer>
+
+<div class="loader" id="loader-wp">
+    <div class="cssload-loader-inner">
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+        <div class="cssload-cssload-loader-line-wrap-wrap">
+            <div class="cssload-loader-line-wrap"></div>
+        </div>
+    </div>
+    <h5>Hi there, Please wait...😊</h5>
+</div>
+
+<script>
+    function openMenu() {
+        document.getElementById("mobile-nav").classList.add("show");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-nav").classList.remove("show");
+    }
+
+    setTimeout(function () {
+        var divToFadeOut = document.getElementById("loader-wp");
+        divToFadeOut.style.opacity = 0;
+        divToFadeOut.style.display = 'none';
+    }, 4000);
+
+</script>
 
 </body>
 </html>
