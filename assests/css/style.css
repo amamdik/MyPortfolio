@@ -738,6 +738,31 @@ ul.breadcrumb li.breadcrumb-separator img {
     margin-bottom: -4px;
 }
 
+.contact-section.inner-page .container hgroup h3 {
+    font-size: 40px;
+}
+
+.contact-section.inner-page .container hgroup {
+    margin-bottom: 20px;
+}
+
+.contact-section.inner-page p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 200;
+    color: white;
+}
+
+article.contact-card {
+    width: 100%;
+    text-align: center;
+    background: #393939;
+    padding: 35px 20px;
+}
+
+.contact-section .container>section>article.contact-card .contact-link {
+    margin: 15px 0 0 0;
+}
 
 /*Loading animation*/
 .loader {
@@ -975,6 +1000,30 @@ ul.breadcrumb li.breadcrumb-separator img {
     }
 }
 
+@-webkit-keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .banner-section>hgroup {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -985,6 +1034,33 @@ ul.breadcrumb li.breadcrumb-separator img {
 }
 
 .banner-section>img {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+.page-title-wrapper>h2 {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+.page-title-wrapper>.breadcrumb-nav {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+.inner-page.slideInUp {
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-name: slideInUp;
