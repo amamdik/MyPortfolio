@@ -2,9 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSSFrameWork</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <script src="assests/js/bootstrap.js"></script>
+    <style>body{overflow-x: hidden;}</style>
 </head>
 <body>
+<!--Nav Bar------------------------------------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">POS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">Sign Up</button>
+                <button class="btn btn-outline-success" type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+
+<!--Desc Nav------------------------------------------------->
+<nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid"  mt-2 style="height:1px">
+        <a class="navbar-brand" href="#">
+            <img src="assests/img/customer.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Customer
+        </a>
+    </div>
+</nav>
+
+<!--search---------------------------------------------------->
+<section>
+    <section class="row p-5" style="height: 100%"  >
+        <section class="col-lg-8 col-12  bg-body" style="height: 100%" class=" mt-8  ">
+
+            <!--search Detail-->
+            <section class="col-lg-5 col-12 vh-75 bg-body  ">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"  >
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" id="lnkCustomerHome"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Customer</li>
+                    </ol>
+                </nav>
+
+                <div class="text-center mt-5 p-1" style="background-color:grey; color:white;">
+                    search Customer
+                </div>
+                <div class="input-group row mt-5 mb-1">
+                    <div class="col-11">
+                        <input class="form-control" id="txtSearchCus" type="search">
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+
+        <!--CustomerManage---->
+        <section class="col-lg-4 col-12 vh-75 bg-body ">
+            <div class="text-center mt-2 p-1" style="background-color:grey; color:white;">
+                Manage Customer
+            </div>
+            <div class="d-flex flex-column">
+                <div class="row mt-2 ">
+                    <div class="form-group">
+                        <label class="col-4 mt-2">ID</label>
+                        <input class="form-control col-7 mt-2" id="txtCustomerID" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Name</label>
+                        <input class="form-control col-7 mt-2" id="txtCustomerName" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Address</label>
+                        <input class="form-control col-7 mt-2" id="txtCustomerAddress" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-4 mt-2">Salary</label>
+                        <input class="form-control col-7 mt-2" id="txtCustomerSalary" type="text">
+                    </div>
+
+                </div>
+                <div class="mt-2 btn-group mb-2" >
+                    <button class="btn btn-sm btn-dark" id="btnSaveCustomer" type="button" style="margin-right: 5px">Save</button>
+                    <button class="btn btn-sm btn-warning" id="btnDeleteCustomer" type="button" style="margin-right: 5px">Delete</button>
+                    <button class="btn btn-sm btn-danger" id="btnUpdateCustomer" type="button" style="margin-right: 5px; color: white">Update</button>
+                    <button class="btn btn-sm btn-info" id="btnRefreshCustomer" type="button" style="margin-right: 5px">Get All</button>
+                    <button class="btn btn-sm btn-success" id="btnCancelCustomer" type="button">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <!--table----------->
+        <div class="table-responsive  ">
+            <table class="table table-hover">
+                <thead class="table-secondary">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tblCustomer">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
 
 </body>
-</html>
