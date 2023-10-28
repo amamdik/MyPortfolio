@@ -8,10 +8,6 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    /* -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out; */
 }
 
 /*.....header.....*/
@@ -354,6 +350,14 @@ a.button-2 img {
     height: 400px;
     background-color: #2C2C2C;
     border-radius: 30px;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.services-section .container>section>section:hover {
+    box-shadow: 0 0 8px 0px #FFB300;
 }
 
 .services-section .container>section>section>article {
@@ -458,15 +462,136 @@ a.button-2 img {
     width: 100%;
 }
 
-.portfolio-section .container section .tab-container .tab-item>img {
+.portfolio-section .container section .tab-container .tab-item.tab1>a {
     display: inline-block;
-    width: 50%;
-    padding: 5px;
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab1>a>img {
+    width: 100%;
 }
 
 .portfolio-section .button-section {
     text-align: center;
     margin-top: 30px;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab1 > a span {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 48%;
+    text-align: center;
+    color: #FF9800;
+    opacity: 0;
+    font-size: 22px;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab1 > a:hover span {
+    opacity: 1;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab1>a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 66%);
+    z-index: 9;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab1>a:hover::before {
+    opacity: 1;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab2 {
+    flex-wrap: wrap;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab2 .assignment-col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #2b2b2b;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 1px #272727;
+}
+
+.portfolio-section .container section .tab-container .tab-item.tab2 .assignment-col h4 {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.assignment-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.assignment-inner > .ass-col {
+    width: 24%;
+    background: #1b1b1b;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 7% 4%;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.assignment-inner > .ass-col:hover {
+    box-shadow: 0 0 5px 0px black;
+    transform: scale(1.02);
+}
+
+.assignment-inner > .ass-col h5 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.assignment-inner > .ass-col span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 22%;
+    color: #FFC107;
+    transform: translateY(20px);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.assignment-inner > .ass-col:hover span {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -1317,6 +1442,15 @@ article.contact-card {
         grid-template-columns: 1fr 1fr;
     }
 
+    .portfolio-section .container section .tab-container .tab-item.tab1 > a span {
+        font-size: 15px;
+    }
+
+    .assignment-inner > .ass-col {
+        width: 49%;
+        padding: 70px 4%;
+    }
+
 }
 
 
@@ -1422,6 +1556,10 @@ article.contact-card {
         height: 100% !important;
     }
 
+    .portfolio-section .container section .tab-container .tab-item.tab1>a {
+        width: 100%;
+    }
+
 }
 
 
@@ -1452,6 +1590,10 @@ article.contact-card {
     }
 
     .portfolio-section .container section .tab-container .tab-item>img {
+        width: 100%;
+    }
+
+    .assignment-inner > .ass-col {
         width: 100%;
     }
 
