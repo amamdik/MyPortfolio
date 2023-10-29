@@ -1076,6 +1076,7 @@ article.contact-card {
     }
 }
 
+
 /* Animation */
 @keyframes slideInUp {
     0% {
@@ -1185,14 +1186,14 @@ article.contact-card {
     -webkit-animation-delay: 4s;
 }
 
-.inner-page.slideInUp {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-}
+/*.inner-page.slideInUp {*/
+/*    -webkit-animation-duration: 1.5s;*/
+/*    animation-duration: 1.5s;*/
+/*    -webkit-animation-name: slideInUp;*/
+/*    animation-name: slideInUp;*/
+/*    animation-delay: 4s;*/
+/*    -webkit-animation-delay: 4s;*/
+/*}*/
 
 /* Extra large devices - large desktops */
 @media (max-width: 1499.98px) {
